@@ -1,0 +1,290 @@
+{
+  "name": "Educational retrieval suite v1",
+  "scope": "50 authored questions labeled against the seven bundled educational documents, searched against the current library. Not an independent production benchmark.",
+  "questions": [
+    {
+      "query": "How does MCP expose tools?",
+      "expected_documents": [
+        "mcp"
+      ]
+    },
+    {
+      "query": "Which transports can an MCP client use?",
+      "expected_documents": [
+        "mcp"
+      ]
+    },
+    {
+      "query": "How are tool inputs defined?",
+      "expected_documents": [
+        "mcp"
+      ]
+    },
+    {
+      "query": "How does a client discover tools?",
+      "expected_documents": [
+        "mcp"
+      ]
+    },
+    {
+      "query": "What is the Model Context Protocol interface?",
+      "expected_documents": [
+        "mcp"
+      ]
+    },
+    {
+      "query": "How are tools invoked over stdio?",
+      "expected_documents": [
+        "mcp"
+      ]
+    },
+    {
+      "query": "How should transient network timeouts be retried?",
+      "expected_documents": [
+        "reliability"
+      ]
+    },
+    {
+      "query": "What is exponential backoff?",
+      "expected_documents": [
+        "reliability"
+      ]
+    },
+    {
+      "query": "Why persist workflow traces?",
+      "expected_documents": [
+        "reliability"
+      ]
+    },
+    {
+      "query": "Which read-only tools can be retried safely?",
+      "expected_documents": [
+        "reliability"
+      ]
+    },
+    {
+      "query": "How do I bound execution time?",
+      "expected_documents": [
+        "reliability"
+      ]
+    },
+    {
+      "query": "What should happen on rate limits?",
+      "expected_documents": [
+        "reliability"
+      ]
+    },
+    {
+      "query": "What architecture normalizes search queries?",
+      "expected_documents": [
+        "seq2seq"
+      ]
+    },
+    {
+      "query": "How is teacher forcing used for training?",
+      "expected_documents": [
+        "seq2seq"
+      ]
+    },
+    {
+      "query": "Which loss trains the encoder-decoder GRU?",
+      "expected_documents": [
+        "seq2seq"
+      ]
+    },
+    {
+      "query": "Why use gradient clipping in training?",
+      "expected_documents": [
+        "seq2seq"
+      ]
+    },
+    {
+      "query": "How do held-out query pairs evaluate the model?",
+      "expected_documents": [
+        "seq2seq"
+      ]
+    },
+    {
+      "query": "What does a PyTorch Seq2Seq model map questions to?",
+      "expected_documents": [
+        "seq2seq"
+      ]
+    },
+    {
+      "query": "How does an inverted index score documents?",
+      "expected_documents": [
+        "retrieval"
+      ]
+    },
+    {
+      "query": "Why precompute document vectors?",
+      "expected_documents": [
+        "retrieval"
+      ]
+    },
+    {
+      "query": "What does inverse document frequency measure?",
+      "expected_documents": [
+        "retrieval"
+      ]
+    },
+    {
+      "query": "How do term frequencies support document retrieval?",
+      "expected_documents": [
+        "retrieval"
+      ]
+    },
+    {
+      "query": "How do we compare latency and recall on a corpus?",
+      "expected_documents": [
+        "retrieval"
+      ]
+    },
+    {
+      "query": "How can we avoid rebuilding the index per query?",
+      "expected_documents": [
+        "retrieval"
+      ]
+    },
+    {
+      "query": "How does Flask expose inference?",
+      "expected_documents": [
+        "flask"
+      ]
+    },
+    {
+      "query": "When should model checkpoints be loaded?",
+      "expected_documents": [
+        "flask"
+      ]
+    },
+    {
+      "query": "Why validate input lengths in serving?",
+      "expected_documents": [
+        "flask"
+      ]
+    },
+    {
+      "query": "What server should host a production Flask application?",
+      "expected_documents": [
+        "flask"
+      ]
+    },
+    {
+      "query": "How should JSON endpoints return errors?",
+      "expected_documents": [
+        "flask"
+      ]
+    },
+    {
+      "query": "How are workflow execution endpoints served?",
+      "expected_documents": [
+        "flask"
+      ]
+    },
+    {
+      "query": "How can Claude and OpenAI plan tools?",
+      "expected_documents": [
+        "providers"
+      ]
+    },
+    {
+      "query": "Where should API keys be kept?",
+      "expected_documents": [
+        "providers"
+      ]
+    },
+    {
+      "query": "Why restrict tool argument schemas?",
+      "expected_documents": [
+        "providers"
+      ]
+    },
+    {
+      "query": "How should retrieved untrusted documents be treated?",
+      "expected_documents": [
+        "providers"
+      ]
+    },
+    {
+      "query": "How do providers synthesize answers from evidence?",
+      "expected_documents": [
+        "providers"
+      ]
+    },
+    {
+      "query": "Why allowlist tool names?",
+      "expected_documents": [
+        "providers"
+      ]
+    },
+    {
+      "query": "What does recall at k measure?",
+      "expected_documents": [
+        "evaluation"
+      ]
+    },
+    {
+      "query": "Why use a held-out split for exact match?",
+      "expected_documents": [
+        "evaluation"
+      ]
+    },
+    {
+      "query": "Which latency percentiles should be reported?",
+      "expected_documents": [
+        "evaluation"
+      ]
+    },
+    {
+      "query": "Why include inference costs in benchmarks?",
+      "expected_documents": [
+        "evaluation"
+      ]
+    },
+    {
+      "query": "Does synthetic data establish production performance?",
+      "expected_documents": [
+        "evaluation"
+      ]
+    },
+    {
+      "query": "How should benchmark warmup be handled?",
+      "expected_documents": [
+        "evaluation"
+      ]
+    },
+    {
+      "query": "Who won the world chess championship?",
+      "expected_documents": []
+    },
+    {
+      "query": "What is the weather in Reykjavik today?",
+      "expected_documents": []
+    },
+    {
+      "query": "When will the next lunar eclipse occur?",
+      "expected_documents": []
+    },
+    {
+      "query": "What is the capital city of Peru?",
+      "expected_documents": []
+    },
+    {
+      "query": "Which restaurant serves the best sushi?",
+      "expected_documents": []
+    },
+    {
+      "query": "How many moons does Jupiter have?",
+      "expected_documents": []
+    },
+    {
+      "query": "Where can I buy concert tickets?",
+      "expected_documents": []
+    },
+    {
+      "query": "What ingredients go into sourdough bread?",
+      "expected_documents": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"id":"mcp","title":"MCP tool integration","text":"Model Context Protocol (MCP) exposes tools through a standard interface. A client discovers tools and invokes them over stdio or HTTP. Tool schemas define valid inputs."},
+  {"id":"reliability","title":"Reliable workflow execution","text":"Retry transient network timeouts and rate limits with exponential backoff. Bound tool calls and execution time. Persist workflow traces to diagnose failures. Read-only tools can be retried safely."},
+  {"id":"seq2seq","title":"Seq2Seq query normalization","text":"A PyTorch encoder-decoder GRU maps natural language questions to concise search queries. Train with teacher forcing, cross entropy, padding masks, and gradient clipping. Evaluate on held-out query pairs."},
+  {"id":"retrieval","title":"Efficient document retrieval","text":"An inverted index scores documents using term frequency and inverse document frequency. Precompute document vectors instead of rebuilding them per query. Benchmark latency and recall on the same corpus."},
+  {"id":"flask","title":"Flask model serving","text":"Flask exposes JSON endpoints for inference and workflow execution. Load model checkpoints once at startup. Validate input lengths, return structured errors, and use a production WSGI server for deployment."},
+  {"id":"providers","title":"Claude and OpenAI orchestration","text":"Claude and OpenAI can plan tool calls and synthesize answers from retrieved evidence. Keep API keys in environment variables. Restrict tool names and argument schemas. Treat retrieved documents as untrusted data."},
+  {"id":"evaluation","title":"Honest model evaluation","text":"Report exact match on a held-out split and recall at k for retrieval. Measure median and p95 latency after warmup. Include preprocessing and inference costs in end-to-end benchmarks. Synthetic data does not establish production performance."}
+]

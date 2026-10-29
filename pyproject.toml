@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-seq2seq-workflows"
+version = "0.1.0"
+description = "MCP research workflows with a PyTorch query normalization pipeline"
+requires-python = ">=3.11"
+dependencies = ["Flask>=3.0,<4", "torch>=2.2,<3", "mcp>=1.20,<2", "openai>=1.68,<3", "anthropic>=0.49,<1", "python-dotenv>=1,<2", "pypdf>=6,<7", "defusedxml>=0.7,<1", "httpx>=0.28,<1", "numpy>=1.26,<3", "pypdfium2>=4.30,<6", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["workflows*"]
+
+[tool.setuptools.package-data]
+workflows = ["templates/*.html", "static/*.js", "static/*.css", "static/*.mjs", "static/pdfjs/*", "static/pdfjs/standard_fonts/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
